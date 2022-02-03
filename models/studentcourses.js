@@ -18,8 +18,10 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.INTEGER,
       primaryKey: true
     },
-    course_id: DataTypes.INTEGER,
-    primaryKey: true
+    course_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    }
   }, {
     sequelize,
     modelName: 'StudentCourses',
