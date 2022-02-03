@@ -80,7 +80,7 @@ module.exports.enrollStudent = async function(req, res){
         student_id: req.body.student,
         course_id: req.params.courseId
     });
-    res.redirec(`/courses/profile/${req.params.courseId}`)
+    res.redirect(`/courses/profile/${req.params.courseId}`)
 }
 
 //remove a student from a course
